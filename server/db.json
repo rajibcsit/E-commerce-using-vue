@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "name": "Smart Phone",
+      "description": "Redmi 5 Plus.",
+      "id": 1
+    },
+    {
+      "name": "Laptop ",
+      "description": "HP-450 G2",
+      "id": 2
+    }
+  ],
+  "suppliers": [
+    {
+      "name": "Samsung",
+      "description": "Best Smart Phone Company",
+      "id": 1
+    },
+    {
+      "name": "Walton",
+      "description": "Best BD Company",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop ",
+      "description": "It is a best product. It is a best product.",
+      "supplier": 1,
+      "category": 2,
+      "price": "55000",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-228x228.jpg",
+      "id": 1
+    },
+    {
+      "name": " Samsung G5Samsung G5",
+      "description": "Best Smart Phone in year 2022.Best Smart Phone in year 2022.Best Smart Phone in year 2022.Best Smart Phone in year 2022.",
+      "supplier": 1,
+      "category": 1,
+      "price": "2000",
+      "image": "https://www.notebookcheck.net/fileadmin/_processed_/4/5/csm_Fotos_Ansicht_04_a01cc968cb.jpg",
+      "id": 2
+    }
+  ],
+  "logIn": [
+    {
+      "username": "admin",
+      "password": "1234"
+    }
+  ]
+}
