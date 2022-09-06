@@ -128,10 +128,11 @@
         editSubmit : async function(){
           try{
             let response = await Product.updateProduct(this.product, this.productId);
-            iziToast.show({
-                    title: 'Hey',
-                    message: 'Edit  successfully!!'
-                });
+
+            iziToast.success({
+                      title: 'Hello',
+                      message: ' Product Update Successfully !',
+                  });
   
             if(response){
               return this.$router.push({ name:'admin.product' });

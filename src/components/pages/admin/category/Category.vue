@@ -48,9 +48,12 @@
      created : async function ()  {
  
        try {
-         
+        this.$eventBus.$emit("loadingStatus",true);
+
          let response = await  Category.getAllCategory();
          this.category = response.data;
+         
+         this.$eventBus.$emit("loadingStatus",false);
          console.log(response)
      
        }
@@ -68,9 +71,11 @@
              if(response){
               let response = await  Category.getAllCategory(); //getting fresh data
                this.category = response.data;
+               
                iziToast.show({
-                   title: 'Hey',
+                   title: 'Hello',
                    message: 'Delete  successfully!!'
+                  
                });
                
              }

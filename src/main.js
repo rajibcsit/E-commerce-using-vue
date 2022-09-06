@@ -6,7 +6,6 @@ import router from './router'
 import axios from 'axios'
 import iziToast from 'izitoast'
 
-
 Vue.config.productionTip = false
 
 

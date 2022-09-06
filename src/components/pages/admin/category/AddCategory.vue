@@ -6,7 +6,7 @@
               Category Name:
           </td>
           <td>
-            <input v-model="category.name" type="text" id="newCatName"  placeholder="Category Name">
+            <input required v-model="category.name" type="text" id="newCatName"  placeholder="Category Name">
           </td>
         </tr>
         <tr>
@@ -14,7 +14,7 @@
             Category Description:
           </td>
           <td>
-            <textarea v-model="category.description" type="text" id="newCatName"  placeholder="Write short here...."> </textarea>
+            <textarea required v-model="category.description" type="text" id="newCatName"  placeholder="Write short here...."> </textarea>
           </td>
         </tr>
          <tr>
@@ -49,10 +49,12 @@ export default {
         submitAdd: async function(){
             try{
                 let response = await Category.createCategory(this.category);
-                iziToast.show({
-                  title: 'Hey',
-                  message: 'Added  successfully!!'
-              });
+
+                iziToast.success({
+                    title: 'Hello',
+                    message: ' Category Added Successfully !',
+                });
+
                 if(response){
                 
                     return this.$router.push({ name:'admin.category' });

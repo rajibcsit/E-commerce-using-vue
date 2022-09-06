@@ -66,9 +66,10 @@
       editSubmit : async function(){
         try{
           let response = await Category.updateCategory(this.category, this.categoryId);
-          iziToast.show({
-                  title: 'Hey',
-                  message: 'Edit  successfully!!'
+
+          iziToast.success({
+                    title: 'Hello',
+                    message: ' Category Update Successfully !',
               });
 
           if(response){

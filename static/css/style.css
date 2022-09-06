@@ -13,15 +13,15 @@ a{
 	text-decoration: none;
 }
 
-#header{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: #2a669e;
-	padding: 9px;
-	height: 55px;
-	border-bottom: 1px solid #f1f1f1;
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #6e8397;
+    padding: 9px;
+    height: 55px;
+    border-bottom: 3px solid #f5efef;
 }
 
 
@@ -39,16 +39,16 @@ a{
 	color: #fff;
 }
 
-#sidebar{
-	position: fixed;
-	top: 55px;
-	left: 0;
-	bottom: 0;
-	background: #eeeeee;
-	width: 288px;
-	overflow-y: auto;
-	border-right: 1px solid #dadada;
-	border-top: 1px solid #dadada;
+#sidebar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    background: #d3dadb45;
+    width: 288px;
+    overflow-y: auto;
+    border-right: 1px solid #f0e9f587;
+    border-top: 1px solid #dadada;
 }
 
 #main{
@@ -126,10 +126,10 @@ table.nice-table tr th, table.nice-table tr td, td{
 	padding: 9px;
 }
 
-table.nice-table tr th{
-	background: #9c69a0;
-	color: #fff;
-	text-align: left;
+table.nice-table tr th {
+    background: #6b7174;
+    color: #fff;
+    text-align: left;
 }
 
 
@@ -282,17 +282,13 @@ textarea{
 
 .loginHeader{
 	padding: 9px 22px;
-    background: #1794b5;
+    background: #808a8d;
     color: #fff;
 }
 
 .loginContainer{
 	padding: 22px;
 	
-}
-.loading{
-	width: 200px;
-	height: 100px;
 }
 
 #shop{	
@@ -369,6 +365,12 @@ p.price{
 	color: #fff;
 	font-size: 55px;
 	padding-top: calc(50vh - 158px);
+	
+}
+.loading{
+	width: 200px;
+	height: 100px;
+	margin-top: 130px;
 }
 
 img.thumbnile{

@@ -66,10 +66,11 @@
         editSubmit : async function(){
           try{
             let response = await Supplier.updateSupplier(this.supplier, this.supplierId);
-            iziToast.show({
-                    title: 'Hey',
-                    message: 'Edit  successfully!!'
-                });
+            
+            iziToast.success({
+                      title: 'Hello',
+                      message: ' Supplier Update Successfully !',
+                  });
   
             if(response){
               return this.$router.push({ name:'admin.supplier' });

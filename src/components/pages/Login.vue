@@ -5,66 +5,73 @@
     </div>
     <table>
       <tr>
-        <td> Username </td>
+        <td>Username</td>
         <td>:</td>
-        <td> <input type="text" placeholder="Username" v-model="user.username"> </td>
+        <td>
+          <input type="text" placeholder="Username" v-model="user.username" />
+        </td>
       </tr>
 
       <tr>
-        <td> Password </td>
+        <td>Password</td>
         <td>:</td>
-        <td> <input type="password" placeholder="Password" v-model="user.password"> </td>
+        <td>
+          <input
+            type="password"
+            placeholder="Password"
+            v-model="user.password"
+          />
+        </td>
       </tr>
 
       <tr>
         <td></td>
         <td></td>
-        <td> <button class="addBtn" @click="loginNow()"> Login</button> </td>
+        <td><button class="addBtn" @click="loginNow()">Login</button></td>
       </tr>
-
     </table>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-import iziToast from 'izitoast';
+import axios from "axios";
+import iziToast from "izitoast";
+//import {Login} from '@/services/Login';
 export default {
-  name: 'Login',
-  data () {
+  name: "Login",
+  data() {
     return {
-      user:{
+      user: {
         username: "",
         password: ""
       }
-    }
+    };
   },
   methods: {
-    loginNow(){
+    loginNow() {
       console.log(this.user);
-      this.$eventBus.$emit("loadingStatus",true);
-      this.$axios.post("https://reqres.in/api/login",this.user)
-      .then(res=>{
-        
-        this.$eventBus.$emit("loadingStatus",false);
-        iziToast.show({
-                  title: 'Welcome',
-                  message: 'Login  successfully!!'
-              });
-       
-        if(res.data.error){
-         
+      this.$eventBus.$emit("loadingStatus", true);
+      this.$axios.post("https://reqres.in/api/login", this.user).then(res => {
+        this.$eventBus.$emit("loadingStatus", false);
+
+        iziToast.success({
+          title: "Welcome",
+          message: " Login Successfully !"
+        });
+
+        if (res.data.error) {
           this.$iziToast.error({
-              title: 'Error',
-              message: res.data.message,
+            title: "Error",
+            message: res.data.message
           });
-      }else{
-        localStorage.setItem("token", res.data.token);
-        this.$axios.defaults.headers.common['Authorization'] = "token " + localStorage.getItem("token");
-        this.$router.push({name: "admin"});
-      }
+        } else {
+          localStorage.setItem("token", res.data.token);
+          this.$axios.defaults.headers.common["Authorization"] =
+            "token " + localStorage.getItem("token");
+          this.$router.push({ name: "admin" });
+        }
       });
     }
   }
-}
+};
 </script>

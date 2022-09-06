@@ -1,24 +1,24 @@
 {
   "categories": [
     {
-      "name": "Smart Phone",
-      "description": "Redmi 5 Plus.",
-      "id": 1
-    },
-    {
-      "name": "Laptop ",
-      "description": "HP-450 G2",
-      "id": 2
-    },
-    {
       "name": "Smart TV",
       "description": "32\" (T4700) Smart HD TV",
       "id": 3
     },
     {
       "name": "Laptop ",
-      "description": "Best Laptop",
+      "description": "Best laptop. price",
       "id": 4
+    },
+    {
+      "name": "Laptop ",
+      "description": "\nLenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6\" HD Laptop\nLenovo IdeaPad",
+      "id": 5
+    },
+    {
+      "name": "Laptop ",
+      "description": "best ",
+      "id": 6
     }
   ],
   "suppliers": [
@@ -41,6 +41,16 @@
       "name": "HP",
       "description": "Hp-540 G5",
       "id": 4
+    },
+    {
+      "name": "Vivo Y20",
+      "description": "Made in China.",
+      "id": 5
+    },
+    {
+      "name": " Lenovo ",
+      "description": "Best Laptop brand",
+      "id": 6
     }
   ],
   "products": [
@@ -79,9 +89,27 @@
       "price": "45000",
       "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-228x228.jpg",
       "id": 4
+    },
+    {
+      "name": "Smart Phone",
+      "description": "Product details of Vivo 50A Prime - 4GB RAM / 128GB ROM",
+      "supplier": 5,
+      "category": 1,
+      "price": "22500",
+      "image": "https://img.freepik.com/free-psd/smartphone-mockup_1310-812.jpg?w=2000",
+      "id": 5
+    },
+    {
+      "name": "Laptop ",
+      "description": "Slim 3i 15IGL Intel Celeron N4020 15.6\" HD Laptop",
+      "supplier": 6,
+      "category": 2,
+      "price": "36000",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-500x500.jpg",
+      "id": 6
     }
   ],
-  "logIn": [
+  "login": [
     {
       "username": "admin",
       "password": "1234"

@@ -31,9 +31,12 @@
       created : async function ()  {
    
         try {
-            
+          this.$eventBus.$emit("loadingStatus",true);
+
             let response = await  Product.getAllProduct();
             this.allProducts = response.data;
+
+          this.$eventBus.$emit("loadingStatus",false);
         
         }
         catch (error){
