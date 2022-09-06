@@ -9,6 +9,16 @@
       "name": "Laptop ",
       "description": "HP-450 G2",
       "id": 2
+    },
+    {
+      "name": "Smart TV",
+      "description": "32\" (T4700) Smart HD TV",
+      "id": 3
+    },
+    {
+      "name": "Laptop ",
+      "description": "Best Laptop",
+      "id": 4
     }
   ],
   "suppliers": [
@@ -21,6 +31,16 @@
       "name": "Walton",
       "description": "Best BD Company",
       "id": 2
+    },
+    {
+      "name": "Samsung",
+      "description": "Bangladeshi best company.",
+      "id": 3
+    },
+    {
+      "name": "HP",
+      "description": "Hp-540 G5",
+      "id": 4
     }
   ],
   "products": [
@@ -34,13 +54,31 @@
       "id": 1
     },
     {
-      "name": " Samsung G5Samsung G5",
+      "name": " Samsung G5",
       "description": "Best Smart Phone in year 2022.Best Smart Phone in year 2022.Best Smart Phone in year 2022.Best Smart Phone in year 2022.",
       "supplier": 1,
       "category": 1,
       "price": "2000",
       "image": "https://www.notebookcheck.net/fileadmin/_processed_/4/5/csm_Fotos_Ansicht_04_a01cc968cb.jpg",
       "id": 2
+    },
+    {
+      "name": "Smart TV",
+      "description": "Best TV for 2022: Smart TVs From OLED to QLED, From Budget to High-End",
+      "supplier": 2,
+      "category": 3,
+      "price": "22000",
+      "image": "https://www.cnet.com/a/img/resize/5bbf90e0ed7df5ea00d8b192784703742e70f7d0/2022/06/22/872fa7ca-8a46-46fd-b035-8bb01e40257d/samsung-qn65qn60b-tv-5616.jpg?auto=webp&fit=crop&height=528&width=940",
+      "id": 3
+    },
+    {
+      "name": "Hp-450 G5",
+      "description": "Best price laptop",
+      "supplier": 4,
+      "category": 4,
+      "price": "45000",
+      "image": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-228x228.jpg",
+      "id": 4
     }
   ],
   "logIn": [

@@ -18,9 +18,10 @@ import ProductEdit from '@/components/pages/admin/product/EditProduct'
 
 
 import Shop from '@/components/pages/shop/Shop'
-
 import shopProducts from '@/components/pages/shop/shopProducts'
 import shopProduct from '@/components/pages/shop/shopProduct'
+
+import Checkout from '@/components/pages/shop/Checkout'
 
 Vue.use(Router)
 
@@ -44,7 +45,7 @@ export default new Router({
       component: Admin,
       redirect: {path: '/admin/category'},
 
-      // /category/
+      //...................category...................//
       children: [
         {
           path: 'category',
@@ -62,7 +63,7 @@ export default new Router({
           component: EditCategory
         },
 
-// /supplier/
+//.................supplier..............//
 
         {
           path: 'supplier',
@@ -80,7 +81,7 @@ export default new Router({
           component: Supplieredit
         },
 
-   // /Product/     
+   //...............Product............./     
         {
           path: 'product',
           name: 'admin.product',
@@ -99,6 +100,7 @@ export default new Router({
       ]
     },
 
+//.......... Shop.............. // 
     {
       path: '/shop',
       name: 'shop',
@@ -112,10 +114,15 @@ export default new Router({
        },
 
        {
-        path: 'product/:pid',
-        name: 'shop.product',
+        path: 'product/:id',
+        name: 'single-product',
         component: shopProduct
-     }
+      },
+      {
+        path: 'checkout',
+        name: 'shop.checkout',
+        component: Checkout
+      }
         
       ]
     },

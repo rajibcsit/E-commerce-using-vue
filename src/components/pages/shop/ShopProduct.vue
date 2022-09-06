@@ -51,6 +51,12 @@
           this.singleProduct = data.data;
         });
      },
+
+     methods:{
+      addToCart(){
+        this.$eventBus.$emit("addToCart", {singleProduct: this.singleProduct , quantity: this.qty});
+      }
+     }
    
     }
   </script>
