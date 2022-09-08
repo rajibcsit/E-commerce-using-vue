@@ -27,15 +27,4 @@ export class Product {
     let dataURL = `${this.serverURL}/products/${productId}`;
     return axios.delete(dataURL);
   }
-
-  static getAllGroups() {
-    let dataURL = `${this.serverURL}/groups/`;
-    return axios.get(dataURL);
-  }
-
-  static getGroup(contact) {
-    let groupId = contact.groupId;
-    let dataURL = `${this.serverURL}/groups/${groupId}`;
-    return axios.get(dataURL);
-  }
 }

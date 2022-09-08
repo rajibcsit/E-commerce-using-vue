@@ -36,7 +36,7 @@
 <script>
 import axios from "axios";
 import iziToast from "izitoast";
-//import {Login} from '@/services/Login';
+//import {Login} from '@/services/Login'
 export default {
   name: "Login",
   data() {
